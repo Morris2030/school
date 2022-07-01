@@ -1,0 +1,418 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+nav{
+    position: fixed;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1vw 8vw;
+    font-size: 20px;
+    color: blue;
+    box-shadow: 2px 2px 10px rgb(0, 0, 0,0.15);
+    z-index: 999;
+}
+nav .logo{
+    width: 100px;
+}
+nav .aca{
+    padding-right: 500px;
+    
+
+}
+.menu-btn{
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    display: none;
+
+    
+
+}
+#menu-close{
+    display: none;
+}
+nav .navication{
+    display: flex;
+}
+
+
+nav .navication ul{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+    
+
+}
+
+nav .navication ul li{
+    margin-left: 30px;
+    color: rgb(21, 21, 100);
+    font-size: 16px;
+    font-weight: 500;
+    transition: 0.3s ease;
+   
+}
+
+nav .navication ul li a {
+    font-weight: 500;
+}
+
+nav .navication ul li:hover{
+    color: yellow;
+    cursor: pointer;
+}
+#Home{
+    background-image: linear-gradient(rgba(9,5,54,0.3),rgba(5,4,46,0.7)),url();
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+
+    
+    
+}
+#Home h2{
+  color: white;  
+  font-size: 2.25rem;
+  letter-spacing: 1px;
+}#Home p{
+    width: 50%;
+    color: white;
+    line-height: 25px;
+    font-size: 1rem;
+}
+#Home a{
+    text-decoration: none;
+    font-size: 0.9rem;
+    padding: 13px 35px;
+    background-color: bisque;
+    font-weight: 600;
+    border-radius: 5px;
+} 
+#Home .btn{
+    margin-top: 30px;
+}
+#Home a.blue{
+    color: white;
+    background-color: blue;
+    transition: 0.3s ease;
+}
+#Home a.blue:hover{
+    color: white; 
+}
+#Home a.yellow{
+    color: white;
+    background-color:yellow;
+    transition: 0.3s ease;
+}
+#Home a.yellow:hover{
+    color:blue;
+    background-color: beige;
+}
+#features{
+    padding: 5vw 8vw 0 8vw;
+    text-align: center;
+
+}
+#features .fea-base{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(320px,1fr));
+    grid-gap: 1rem;
+    margin-top: 50px;
+
+}  
+#features .fea-box{
+    background-color: beige;
+    text-align: start;
+
+}
+#features .fea-box i{
+    font-size: 50px;
+}
+
+#features .fea-box h3{
+    font-size: 1.6rem;
+    font-weight: 600;
+    color:black;
+    padding: 13px 0 7px 0;
+}
+#features .fea-box p{
+    font-size: 1.3rem;
+    font-weight: 400;
+    color:black;
+}   
+#courses{
+    padding: 8vw 8vw 8vw 8vw;
+    text-align: center;
+}
+#courses .couse-box{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(320px,1fr));
+    grid-gap: 1rem;
+    margin-top: 50px;
+
+}
+#courses .course{
+    text-align: start;
+    background-color: azure;
+    height: 100%;
+    position: relative;
+}
+#courses .course img{
+    width: 100%;
+    height: 60%;
+    background-size: cover;
+    background-position: center;
+}
+#courses .course .details{
+    padding: 15px 15px 0 15px;
+}
+#courses .course .cost{
+background-color: darkolivegreen;
+line-height: 70px;
+width: 70px;
+height: 70px;
+text-align: center;
+border-radius: 50%;
+color: azure;
+position: absolute;
+right: 15px;
+bottom: 100px;
+
+}
+.start{
+    color: yellow;
+}
+#registration{
+    padding: 6vw 8vw 6vw 8vw;
+    background-image: linear-gradient(rgba(9,5,54,0.3),rgba(5,4,46,0.7)),url(bg1n2/images\ \(18\).jpeg);
+    width: 100%;
+    height: 100%; 
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+#registration .reminder{
+    color: white;
+}
+#registration .reminder h1{
+    color: bisque;
+}
+.time{
+    display: flex;
+    margin-top: 40px;
+}
+.date{
+    text-align: center;
+    padding: 13px 35px;
+    background-color:rgba(255, 255, 255, 0.25)    
+}
+
+#registration .form{
+    background-color: white;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+}
+#registration .form input{
+    margin: 15px 0;
+    padding: 15px 10px;
+    border: 1px solid blueviolet;
+    outline: none;
+
+}
+#registration .form .btn{
+    margin-top: 20px;
+}
+#registration .form a.yellow{
+    color: white;
+    text-decoration: none;
+    font-size: 0.9rem;
+    padding: 13px 35px;
+    background-color: bisque;
+    font-weight: 600;
+    border-radius: 5px;
+    background-color:yellow;
+    transition: 0.3s ease;
+}
+#registration .form a.yellow:hover{
+    color:blue;
+    background-color: beige;
+    
+}
+.expert{
+  padding: 8vw 8vw 8vw 8vw;
+  text-align: center;
+
+}
+.pro-links{
+    margin-top: 10px;
+}
+.pro-links i{
+    padding: 10px 13px;
+    border: 1px solid rgb(21, 21, 100);
+}
+.pro-links i:hover{
+    cursor: pointer;
+    transition: 02s ease;
+    background-color: rgb(21, 21, 60);
+    color: aliceblue;
+
+}
+.expert-box{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-gap: 1rem;
+    margin-top: 50px;
+}
+.profile{
+    background-color: azure;
+    padding: 30px 10px;
+}
+.expert h1{
+    font-size: 35px;
+}
+.profile h6{
+    font-size: 15px;
+    font-weight: 600;
+}
+footer{
+    padding: 8vw;
+    background-color: #101c32;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+footer h3{
+    color: white;
+    padding-bottom: 40px;
+    font-weight: 600;
+}
+footer li{
+    list-style: none;
+    color: #7b838a;
+    padding: 10px 0;
+    font-size: 15px;
+    cursor: pointer;
+}
+footer li:hover{
+color: azure;
+}
+footer p{
+    color:beige;
+}
+footer .Subscribe{
+    margin-top: 20px;
+    
+}
+footer input{
+    width: 220px;
+    padding: 15px 12px;
+    background-color: whitesmoke;
+    border: none;
+    outline: none;
+    color: white;
+}
+footer .Subscribe a{
+    color: white;
+    text-decoration: none;
+    font-size: 0.9rem;
+    padding: 13px 35px;
+    font-weight: 600;
+
+    background-color:yellow;
+    transition: 0.3s ease;
+}
+.Subscribe a:hover{
+    color: blue;
+    background-color: beige;
+}
+.social i{
+
+    margin-top: 50px;
+    font-size: 30px;
+    text-align: center;
+    
+}
+.social i{
+    padding: 10px 13px;
+    border: 1px solid white;
+}
+.social i:hover{
+    cursor: pointer;
+    transition: 02s ease;
+    background-color: black;
+    color: aliceblue;
+}
+h6{
+    font-size: 20px;
+    padding-top: 30px;
+    text-align: center;
+
+}
+h6 p{
+    display: flex;
+    text-align: left;
+}
+@media (max-width: 768px) {
+    nav{
+        padding: 15px 20px;
+    }
+    .menu-btn{
+        display: initial;
+    }
+    #menu-close{
+        display: initial;
+        font-size: 1.6rem;
+        color:white;
+        padding: 30px 0 20px 20px;
+        
+    }
+    nav .navication ul{
+        position: absolute;
+        top: 0;
+        right: -20px;
+        width: 220px; background-color:rgba(14, 20,90,0.45);
+        height: 100vh;
+        backdrop-filter: blur(4.5px);
+        border: 1px solid rgba(255, 255, 255, 0.18);
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    nav .navication ul.active{
+        right: 0;
+    }
+    nav .navication ul li{
+        padding: 30px 0 20px 20px;
+        margin-right: 0;
+    
+
+    }
+    nav .navication ul li {
+        color: white
+    }
+
+    
+    }
+   
+
+    
+    
+
+    
